@@ -1,7 +1,7 @@
 // ============================================
 // EDITOR DE IMÁGENES CON ÁLGEBRA MATRICIAL
 // ============================================
-// Nombre del estudiante: _________________
+// Nombre del estudiante: Damian__Coba_
 // Fecha: _________________
 // Grupo: _________________
 
