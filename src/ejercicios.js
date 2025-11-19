@@ -445,7 +445,7 @@ function rotar90Grados(matriz) {
   const columnas = matriz[0].length;
   const resultado = [];
 
-  // Paso 1: Transponer (Las columnas 'j' se convierten en las filas 'i')
+  
   for (let j = 0; j < columnas; j++) {
     const nuevaFila = [];
     for (let i = 0; i < filas; i++) {
@@ -454,7 +454,6 @@ function rotar90Grados(matriz) {
     resultado.push(nuevaFila);
   }
 
-  // Paso 2: Voltear Horizontalmente (Reverse a cada fila)
   for (let i = 0; i < resultado.length; i++) {
     resultado[i].reverse();
   }
