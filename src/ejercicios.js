@@ -325,8 +325,28 @@ function convertirEscalaGrises(matriz) {
   // 
   // 2. Asignar ese valor a los tres canales
   // pixelNuevo = {r: gris, g: gris, b: gris, a: pixel.a}
+
+  const resultado = copiarMatriz(matriz);
+  for (let i = 0; i < resultado.length; i++){
+    for (let x = 0; x < resultado.length; x++){
+
+
+      const pixel = resultado[i][x]
+
+      const gris = Math.floor(
+        0.299 * pixel.r +
+        0.587 * pixel.g +
+        0.114 * pixel.b
+      );
+
+
+      pixel.r = gris
+      pixel.g = gris
+      pixel.b = gris
+    }
+  }
   
-  return []; // REEMPLAZAR
+  return resultado; // REEMPLAZAR
 }
 
 // ============================================
