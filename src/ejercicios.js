@@ -2,7 +2,7 @@
 // EDITOR DE IMÁGENES CON ÁLGEBRA MATRICIAL
 // ============================================
 // Nombre del estudiante: Damian__Coba_
-// Fecha: _________________
+// Fecha: ______18-11-25
 // Grupo: _________________
 
 const { PNG } = require('pngjs');
