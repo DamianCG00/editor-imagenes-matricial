@@ -399,9 +399,26 @@ function voltearHorizontal(matriz) {
  */
 function voltearVertical(matriz) {
   // TODO: Implementar volteo vertical
+
   
-  return []; // REEMPLAZAR
+  
+  const alto = matriz.length;
+  const ancho = matriz[0].length;
+  const resultado = [];
+
+  for (let i = 0; i < alto; i++) {
+    const filaNueva = [];
+    const indiceFilaOriginal = alto - 1 - i;
+
+    for (let j = 0; j < ancho; j++) {
+      filaNueva.push(matriz[indiceFilaOriginal][j]);
+    }
+    resultado.push(filaNueva);
+  }
+
+  return resultado;
 }
+
 
 /**
  * Ejercicio 3.3: Rotar 90 grados en sentido horario (10 puntos)
