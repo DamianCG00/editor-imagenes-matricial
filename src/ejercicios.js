@@ -204,11 +204,19 @@ function obtenerCanal(matriz, canal) {
  */
 function obtenerDimensionesImagen(rutaImagen) {
   // TODO: Obtener dimensiones sin cargar toda la imagen en memoria
+  const buffer = fs.readFileSync(rutaImagen);
+
+  const png = PNG.sync.read(buffer);
+
   
   // Pista: Puedes cargar la imagen y usar obtenerDimensiones()
   // o leer solo el header del PNG
   
-  return { ancho: 0, alto: 0, totalPixeles: 0 }; // REEMPLAZAR
+  return { 
+    ancho: png.width, 
+    alto: png.height, 
+    totalPixeles: png.height * png.width 
+  }; 
 }
 
 // ============================================
